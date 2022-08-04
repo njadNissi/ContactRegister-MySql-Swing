@@ -20,7 +20,12 @@ public class Contacts extends javax.swing.JFrame {
         String fname = this.jTextFName.getText();
         String lname = this.jTextFLName.getText();
         String Phonenum = this.jTextFPhone.getText();
-        String database = "Contacts";
+
+        /**
+         * please create a database called contacts in your mysql
+         * and a table called agenda. or just use the names of your choice
+         * */
+        String database = "contacts";
         String table = "agenda";
         try{
             Class.forName("com.mysql.jdbc.Driver");
@@ -64,7 +69,7 @@ public class Contacts extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("AGENDA-安杰");
+        setTitle("AGENDA-NJAD");
         setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
@@ -246,13 +251,13 @@ public class Contacts extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Contacts.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            Logger.getLogger(Contacts.class.getName()).log(Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Contacts.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            Logger.getLogger(Contacts.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Contacts.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            Logger.getLogger(Contacts.class.getName()).log(Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Contacts.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            Logger.getLogger(Contacts.class.getName()).log(Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
